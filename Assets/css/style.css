@@ -1,0 +1,147 @@
+*, h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(2,0,33);
+background: linear-gradient(180deg, rgba(2,0,33,1) 0%, rgba(13,13,107,1) 48%,
+rgba(46,144,163,1) 100%);
+}
+
+.content {
+    height: 100%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.content h1 {
+    padding: 1rem;
+    text-align: justify;
+    color: #fff;
+}
+
+.characters {
+    padding: 1rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: .8rem;
+    color: #dfdfdf;
+    border-radius: 1rem;
+    background-color: #0b2530;
+    height: 230px;
+}
+
+.character .number {
+    margin: 0;
+    text-align: right;
+    font-size: .6rem;
+    color: #ffffffea;
+}
+
+.character .name {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.character .detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.character .detail .name { 
+    text-align: left;
+    margin-bottom: .1rem;
+    margin-left: 0.5rem;
+    font-size: .7rem;
+}
+
+.character .detail .origem, .funcao, .localizacao {
+    font-size: .6rem;
+    margin-bottom: .5rem;
+    margin-left: 0.5rem;
+    padding: .250rem;
+    background-color: #00000078;
+    border-radius: .8rem;
+}
+
+.character .detail img {
+    max-width: 100%;
+    height: 100px;
+    margin-top: 1.8rem;
+    border-radius: 5rem;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination button {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: #dfdfdf;
+    border: .1rem solid #000;
+    border-radius: 1rem;
+    cursor: pointer;
+    appearance: none;
+    transition: all 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #1b3642;
+    color: #fff;
+}
+
+.alertPags {
+    color: #e21818;
+    transition: all 0.3s;
+    
+}
+
+@media only screen and (min-width: 50px) {
+    .content {
+        max-width: 280px;
+    }
+    .characters {
+        grid-template-columns: 1fr;
+    }
+} 
+
+@media only screen and (min-width: 500px) {
+    .content {
+        max-width: 500px;
+    }
+    .characters {
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media only screen and (min-width: 630px) {
+    .content {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .characters {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    .characters {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+} 
